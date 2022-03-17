@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+}
+
+header, footer, .tabs {
+    background-color: #a2001a;
+    font-family: 'Permanent Marker', cursive;
+    color: #FFFFFF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+
+.main {
+    background-color: #ffd600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    font-size: 1.5rem;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+}
+
+#tabbed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel {
+    height: 500px;
+    width: 650px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    margin: 50px;
+}
+
+footer {
+    font-size: 1.2rem;
+    line-height: 60px;
+}
+
+#tabbed-content li{
+    display: inline-block;
+    cursor: pointer;
+}
+
+#tabbed-content .panel{
+    display: none;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: #660213;
+}
