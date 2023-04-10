@@ -3,18 +3,27 @@ export default function () {
 
   const header = document.createElement("header");
   const background = document.createElement("div");
+  const ul = document.createElement("ul");
+  const liHome = document.createElement("li");
+  const liMenu = document.createElement("li");
+  const liContact = document.createElement("li");
   const content = document.createElement("div");
   const footer = document.createElement("footer");
 
   header.textContent = "Restaurante do Bobinho";
-  content.textContent = "CONTENT CONTENT CONTENT";
+  liHome.textContent = "Início";
+  liMenu.textContent = "Cardápio";
+  liContact.textContent = "Contato";
+  content.textContent = "";
   footer.textContent = "vitmonjo - 2023";
 
   header.classList.add("header");
   background.classList.add("background");
+  ul.classList.add("tabs");
   content.classList.add("content");
   footer.classList.add("footer");
 
-  background.append(content);
+  ul.append(liHome, liMenu, liContact);
+  background.append(ul, content);
   contentId.append(header, background, footer);
 }
