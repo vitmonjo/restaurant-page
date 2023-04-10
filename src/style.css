@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
 * {
-  background-color: brown;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 80px 1fr 50px;
+  height: 100vh;
+}
+
+.header {
+  background-color: rgb(112, 151, 117);
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 80px;
+}
+
+.background {
+  background-color: rgb(161, 204, 165);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: rgb(143, 185, 150);
+  width: 600px;
+  height: 900px;
+  margin: 20px;
+  border-radius: 50px;
+}
+
+.footer {
+  background-color: rgb(112, 151, 117);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 50px;
 }
