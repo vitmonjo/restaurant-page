@@ -26,13 +26,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.tabs {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+  padding: 0px;
+  margin-top: 15px;
+}
+
+li {
+  background-color: rgb(143, 185, 150);
+  width: 130px;
+  text-align: center;
+  border-radius: 20px 20px 0px 0px;
+}
+
+li:hover {
+  background-color: rgb(112, 151, 117);
 }
 
 .content {
   background-color: rgb(143, 185, 150);
   width: 600px;
   height: 900px;
-  margin: 20px;
+  margin-bottom: 20px;
   border-radius: 50px;
 }
 
