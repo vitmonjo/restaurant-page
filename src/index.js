@@ -1,4 +1,6 @@
-import "./style.css";
-import Init from "./init-page-load";
+import './style.css';
+import Init from './page-structure.js';
+import Home from './home.js';
 
 Init();
+Home();
