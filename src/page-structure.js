@@ -20,6 +20,7 @@ export default function () {
   background.classList.add('background');
   ul.classList.add('tabs');
   liHome.classList.add('active-li');
+  liHome.classList.add('home');
   content.classList.add('content');
   footer.classList.add('footer');
 
