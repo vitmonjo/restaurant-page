@@ -2,6 +2,13 @@ import Bob from './images/bob_chef.jpg';
 
 export default function () {
   const content = document.querySelector('.content');
+  const liHome = document.querySelector('.home');
+  const liMenu = document.querySelector('.menu');
+  const liContact = document.querySelector('.contact');
+
+  liHome.classList.add('active-li');
+  liMenu.classList.remove('active-li');
+  //liContact.classList.remove('active-li');
 
   const collection = [...content.children];
   collection.forEach((item) => item.remove());

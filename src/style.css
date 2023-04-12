@@ -74,8 +74,9 @@ li:hover {
   line-height: 50px;
 }
 
-.bob-chef {
+img {
   height: 300px;
+  width: 300px;
   margin: 15px 0px 15px 0px;
   border-radius: 10%;
 }
@@ -88,4 +89,9 @@ h2 {
 div {
   font-family: 'Playfair Display', serif;
   text-align: justify;
+}
+
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
