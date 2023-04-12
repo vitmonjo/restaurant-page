@@ -21,8 +21,19 @@ export default function () {
   ul.classList.add('tabs');
   liHome.classList.add('active-li');
   liHome.classList.add('home');
+  liMenu.classList.add('menu');
   content.classList.add('content');
   footer.classList.add('footer');
+
+  liHome.addEventListener('click', () => {
+    const collection = [...content.children];
+    collection.forEach((item) => item.remove());
+  });
+
+  liMenu.addEventListener('click', () => {
+    const collection = [...content.children];
+    collection.forEach((item) => item.remove());
+  });
 
   ul.append(liHome, liMenu, liContact);
   background.append(ul, content);

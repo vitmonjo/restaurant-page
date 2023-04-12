@@ -1,7 +1,10 @@
-import Bob from './bob_chef.jpg';
+import Bob from './images/bob_chef.jpg';
 
 export default function () {
   const content = document.querySelector('.content');
+
+  const collection = [...content.children];
+  collection.forEach((item) => item.remove());
 
   const intro = document.createElement('h2');
   const introText = document.createElement('div');
