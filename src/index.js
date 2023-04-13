@@ -14,5 +14,5 @@ Home();
 
   home.addEventListener('click', () => Home());
   menu.addEventListener('click', () => Menu());
-  //contact.addEventListener('click', () => Contact());
+  contact.addEventListener('click', () => Contact());
 })();

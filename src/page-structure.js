@@ -22,9 +22,10 @@ export default function () {
   liHome.classList.add('active-li');
   liHome.classList.add('home');
   liMenu.classList.add('menu');
+  liContact.classList.add('contact');
   content.classList.add('content');
   footer.classList.add('footer');
-
+  /*
   liHome.addEventListener('click', () => {
     const collection = [...content.children];
     collection.forEach((item) => item.remove());
@@ -35,6 +36,11 @@ export default function () {
     collection.forEach((item) => item.remove());
   });
 
+  liContact.addEventListener('click', () => {
+    const collection = [...content.children];
+    collection.forEach((item) => item.remove());
+  });
+*/
   ul.append(liHome, liMenu, liContact);
   background.append(ul, content);
   contentId.append(header, background, footer);
