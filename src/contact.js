@@ -22,10 +22,13 @@ export default function () {
   const firstPhone = document.createElement('div');
   const imgBob = new Image();
 
+  firstContact.classList.add('contact-card');
   firstName.textContent = 'Bob Susin';
   firstPosition.textContent = 'Chef principal e proprietário';
   firstPhone.textContent = '(91) 3100-2173 / (69) 2161-8736';
   imgBob.src = Bob;
+  firstInfo.append(firstName, firstPosition, firstPhone);
+  firstContact.append(imgBob, firstInfo);
 
   const secondContact = document.createElement('div');
   const secondInfo = document.createElement('div');
@@ -34,10 +37,13 @@ export default function () {
   const secondPhone = document.createElement('div');
   const imgMana = new Image();
 
+  secondContact.classList.add('contact-card');
   secondName.textContent = 'Mana Gonçalves';
-  secondName.textContent = 'Gerente de Plantão';
+  secondPosition.textContent = 'Gerente de Plantão';
   secondPhone.textContent = '(22) 3026-1382';
   imgMana.src = Mana;
+  secondInfo.append(secondName, secondPosition, secondPhone);
+  secondContact.append(imgMana, secondInfo);
 
   const thirdContact = document.createElement('div');
   const thirdInfo = document.createElement('div');
@@ -46,8 +52,13 @@ export default function () {
   const thirdPhone = document.createElement('div');
   const imgEntregador = new Image();
 
+  thirdContact.classList.add('contact-card');
   thirdName.textContent = 'Claudinho';
+  thirdPosition.textContent = 'Entregador e quebra galho';
+  thirdPhone.textContent = '(68) 3476-1704 / (79) 2255-4656';
   imgEntregador.src = Entregador;
+  thirdInfo.append(thirdName, thirdPosition, thirdPhone);
+  thirdContact.append(imgEntregador, thirdInfo);
 
   const fourthContact = document.createElement('div');
   const fourthInfo = document.createElement('div');
@@ -56,6 +67,13 @@ export default function () {
   const fourthPhone = document.createElement('div');
   const imgSuporte = new Image();
 
+  fourthContact.classList.add('contact-card');
   fourthName.textContent = 'Marcos';
+  fourthPosition.textContent = 'Suporte de TI';
+  fourthPhone.textContent = 'dogao_do_ti@hotmail.com';
   imgSuporte.src = Suporte;
+  fourthInfo.append(fourthName, fourthPosition, fourthPhone);
+  fourthContact.append(imgSuporte, fourthInfo);
+
+  content.append(firstContact, secondContact, thirdContact, fourthContact);
 }

@@ -30,7 +30,7 @@ export default function () {
     'Bob Susin, ou Bobinho (apelido dado por seu avô) começou pequeno, suas primeiras vendas foram realizadas no boca a boca, realizava entregas de porta em porta, no entanto sua vida mudou após ter começado a vender pratos típicos da ilha na praia, para turistas do mundo inteiro. Com um novo rendimento estabelecido, Bob decide então investir no seu próprio restaurante, buscando centralizar a clientela que já o conhecia e tinha apreço pelo seu produto.';
   structure.textContent = 'Espaço';
   structureText.textContent =
-    'O Restaurante conta com 200m² e 20 mesas com capacidade para até 4 pessoas. Está localizado na área nobre do bairro Ingleses e mantém um padrão alto de qualidade em todas as suas etapas.';
+    'O Restaurante conta com 200m² e 20 mesas com capacidade para até 4 pessoas. Está localizado em área nobre do bairro Ingleses e mantém um padrão alto de qualidade em todas as suas etapas.';
   bobinho.src = Bob;
   bobinho.classList.add('bob-chef');
 

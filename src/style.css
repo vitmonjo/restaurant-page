@@ -91,11 +91,13 @@ div {
   text-align: justify;
 }
 
-.recipe-card {
+.recipe-card,
+.contact-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.recipe-info {
+.recipe-info,
+.contact-card > div {
   padding: 15px;
 }
